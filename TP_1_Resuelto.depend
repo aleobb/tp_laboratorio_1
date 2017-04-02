@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1491152781 source:c:\alebenws\_prog_lab_i - tps\tp_1_resuelto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1491153782 source:c:\alebenws\_prog_lab_i - tps\tp_1_resuelto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1491149134 c:\alebenws\_prog_lab_i - tps\tp_1_resuelto\funciones.h
+
