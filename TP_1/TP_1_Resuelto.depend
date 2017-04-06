@@ -10,3 +10,14 @@
 
 1491149134 c:\alebenws\_prog_lab_i - tps\tp_1_resuelto\funciones.h
 
+1491499067 source:c:\alebentps\tp_laboratorio_1\tp_1\funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1491497333 source:c:\alebentps\tp_laboratorio_1\tp_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1491498957 c:\alebentps\tp_laboratorio_1\tp_1\funciones.h
+

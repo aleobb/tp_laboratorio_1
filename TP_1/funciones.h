@@ -1,7 +1,7 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-int pedirIntVal(char mensaje[], char mensajeError[], int min, int max);
+int pedirIntVal(char mensaje[], char mensajeError[], int minimo, int maximo, int salir);
 void infDatosIng(int flagA, int flagB, int option, float A);
 
 float suma(float A, float B);

@@ -3,40 +3,41 @@
 
 /*
 * \brief solicitar al usuario un numero y validarlo dentro de un rango de enteros (en este caso una opcion del menu)
-* \param mensaje: leyenda para pedir el dato
-* \param mensjaeError: leyenda a mostrar si el dato no esta dentro del rango
-* \param int y max: minimos y maximos validos
-* \return devuelve el dato tomado y validado (en este caso la opcion del menu)
+* \param mensaje: es el array donde se almacena la leyenda leyenda para pedir el dato.
+* \param mensjaeError: es el array donde se almacena la leyenda a mostrar si el dato no esta dentro del rango valido.
+* \param minimo y maximo: variables donde se almacenan los valores minimos y maximos validos que el usuario puede ingresar (en este caso limites de opcion del menu).
+* \param salir: variable donde se almacena el valor que la funcion que llamó a ésta pide devolver en caso de que se haya superado el limite maximo de ingresos.
+* \return devuelve el dato ingresado por el usario y validado (en este caso la opcion del menu elegida por el usuario). Si se superó la cantidad de intentos se devuelve 9 que es la opcion del menu que sale de la funcion main
 */
-int pedirIntVal(char mensaje[], char mensajeError[], int min, int max)
+int pedirIntVal(char mensaje[], char mensajeError[], int minimo, int maximo, int salir)
 {
-    int option;
-    int i=5; // cantidad maxima de ingresos erronos
-    printf("%s: ",mensaje);
+    int option; // variable donde se almacena el valor ingresado por el usuario
+    int i=5; // variable auxiliar que limita la cantidad maxima de intentos de ingresos no validos por parte del usuario.
+    printf("%s: ",mensaje); // se informa al usuario que ingrese un valor
     fflush(stdin); //limpia el buffer
     scanf("%d",&option);
     printf("\n");
 
-    while( option < min || option > max ) //controla que el valor ingresado este dentro del rango valido, sino lo vuelve a pedir con un maximo de intentos
+    while( option < minimo || option > maximo ) //controla que el valor ingresado esté dentro del rango válido. Si no lo está vuelve a pedirlo (con un nro. maximo de intentos)
     {
         printf("%s",mensajeError);
         printf("%s ",mensaje);
-        printf("(Cantidad de intentos maximos: %d): ",i);
+        printf("(Cantidad de intentos maximos: %d): ",i); //se informa la cantidad restante de intentos de ingreso de un dato valido
         fflush(stdin); //limpia el buffer
         scanf("%d",&option);
         printf("\n");
         i--; // se reduce la cantidad intentos de ingreso de un dato valido
         if (i==0)
-            { option = 9; } //igualo a la opcion de salir del menu para terminar y salir del programa
+            { option = salir; } //igualo a la opcion de salir del menu para terminar y salir de la ejecucion main
     }
     return option;
 }
 
 /*
 * \brief Informa al usuario limitaciones en las operaciones posibles a realizar.
-* \param flagA y flagB verifican si el usuario ya ingreso los valores de A y B respectivamente (x e y en main.c)
-* \param option es la opcion del menu elegida por el usuario
-* \A es el valor del primer operando
+* \param flagA y flagB variables cuyo valor va a permitir verificar si el usuario ya ingresó los valores de A y B respectivamente (x e y en main.c)
+* \param option es la variable donde se va a guardar la opcion del menu elegida por el usuario
+* \A es la variable donde se va a almacenar el valor del primer operando (valor de x en main.c)
 * \return no devuelve nada al proceso que llamo a la funcion
 */
 void infDatosIng(int flagA, int flagB, int option, float A)
@@ -44,7 +45,7 @@ void infDatosIng(int flagA, int flagB, int option, float A)
     if ( (option>2 && (flagA + flagB)<2) || option==0 )
     {
         printf("\n\n Atencion!! No se puede realizar niguna operacion ");
-        if (flagA == 1) // si solo se ingreso el dato A )(x en main.c)
+        if (flagA == 1) // si solo se ingresó el dato A )(x en main.c)
         {
             if (A<0)
             { printf("\n (ni siquiera factorial) porque el valor del primer operando es negativo y "); }
@@ -65,8 +66,8 @@ void infDatosIng(int flagA, int flagB, int option, float A)
 }
 
 /*
-* \brief calcula la suma entre 2 numeros A y B
-* \param A y B son los valores con los que se va a calcular la suma
+* \brief calcula la suma entre 2 numeros (A mas B)
+* \param A y B son las variables con cuyos valores se va a calcular la suma
 * \return devuelve el resultado de la suma
 */
 float suma(float A, float B)
@@ -75,8 +76,8 @@ float suma(float A, float B)
 }
 
 /*
-* \brief calcula la resta entre 2 numeros A y B
-* \param A y B son los valores con los que se va a calcular la resta
+* \brief calcula la resta entre 2 numeros (A menos B)
+* \param A y B son las variables con cuyos valores se va a calcular la resta
 * \return devuelve el resultado de la resta
 */
 float resta(float A, float B)
@@ -85,8 +86,8 @@ float resta(float A, float B)
 }
 
 /*
-* \brief calcula la division de A por B
-* \param A y B son los valores con los que se va a calcular la division
+* \brief calcula la division entre dos numeros (A dividido por B)
+* \param A y B son las variables con cuyos valores se va a calcular la division
 * \return devuelve el resultado de la division
 */
 float division(float A, float B)
@@ -101,8 +102,8 @@ float division(float A, float B)
 }
 
 /*
-* \brief calcula la multiplicacion entre 2 numeros A y B
-* \param A y B son los valores con los que se va a calcular la multiplicacion
+* \brief calcula la multiplicacion entre 2 numeros (A por B)
+* \param A y B son las variables con cuyos valores se va a calcular la multiplicacion
 * \return devuelve el resultado de la multiplicacion
 */
 double multiplicacion(float A, float B)
@@ -112,7 +113,7 @@ double multiplicacion(float A, float B)
 
 /*
 * \brief calcula el factorial del numero A
-* \param A es el valor utilizado para realizar el calculo
+* \param A es la variable donde se almacena el valor utilizado para realizar el calculo factorial
 * \return devuelve el resultado del factorial de A
 */
 double factorial(int A)
