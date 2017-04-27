@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1493324842 source:g:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+	"funciones.h"
+
+1492974692 g:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funcionesauxiliares.h
+
+1493051954 g:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funciones.h
+
+1492984128 source:g:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+	"funciones.h"
+
+1493236378 source:g:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcionesAuxiliares.h"
+
+1493051912 source:i:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+	"funciones.h"
+
+1492974692 i:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funcionesauxiliares.h
+
+1493051954 i:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funciones.h
+
+1492984128 source:i:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+	"funciones.h"
+
+1493051980 source:i:\alebenws\_prog_lab_i - tps\tp_2\tp_2_resuelto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcionesAuxiliares.h"
+
+1493324906 source:c:\tp_laboratorio_1\tp_2\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+	"funciones.h"
+
+1492974692 c:\tp_laboratorio_1\tp_2\funcionesauxiliares.h
+
+1493051954 c:\tp_laboratorio_1\tp_2\funciones.h
+
+1492984128 source:c:\tp_laboratorio_1\tp_2\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+	"funciones.h"
+
+1493236378 source:c:\tp_laboratorio_1\tp_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcionesAuxiliares.h"
+
