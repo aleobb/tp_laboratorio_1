@@ -55,7 +55,7 @@
 	"funciones.h"
 	"funcionesAuxiliares.h"
 
-1493324906 source:c:\tp_laboratorio_1\tp_2\funciones.c
+1493424897 source:c:\tp_laboratorio_1\tp_2\funciones.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -65,7 +65,7 @@
 
 1492974692 c:\tp_laboratorio_1\tp_2\funcionesauxiliares.h
 
-1493051954 c:\tp_laboratorio_1\tp_2\funciones.h
+1493424897 c:\tp_laboratorio_1\tp_2\funciones.h
 
 1492984128 source:c:\tp_laboratorio_1\tp_2\funcionesauxiliares.c
 	<stdio.h>
@@ -75,7 +75,7 @@
 	"funcionesAuxiliares.h"
 	"funciones.h"
 
-1493236378 source:c:\tp_laboratorio_1\tp_2\main.c
+1493425995 source:c:\tp_laboratorio_1\tp_2\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

@@ -1,12 +1,9 @@
 /********************************************************************************************
- * Programa: Trabajo Practico Nº 2
  *
- * Hacer un programa que defina un array de 20 ítems de esta estructura y con un menú como el
- * siguiente:
- * 1.Agregar una persona
- * 2.Borrar una persona
- * 3.Imprimir lista ordenada por nombre
- * 4.Imprimir gráfico de edades
+ * Programa: Base de datos de Personas
+ *
+ * Objetivo:
+ * Crear una base de datos de personas y poder listarla ordenadamente y graficarla.
  *
  * Version: 1.0 22 de Abril de 2017.
  * Autor: Ben Alejandro
@@ -25,21 +22,18 @@
 
 #define EL_DATO_ES_VALIDO 1
 #define EL_DATO_NO_ES_VALIDO 0
-#define QTYPERSONA 20
+#define QTYPERSONA 20  /// Cantidad de registros de personas a guardar
 
 
 int main()
 {
-    EPersona arrayPersonas[QTYPERSONA];
+    EPersona arrayPersonas[QTYPERSONA];  /// Se crea el array donde se van a guardar los datos
 
     char seguir='s';
     int opcion=0;
     int contadorPersonas=0;
 
-    initArray(arrayPersonas,QTYPERSONA);
-
-    cargaAutomatica(arrayPersonas,QTYPERSONA);
-    contadorPersonas=5;
+    initArray(arrayPersonas,QTYPERSONA); /// Se inicializa el array de personas
 
     while(seguir=='s')
     {
@@ -69,15 +63,17 @@ int main()
             case 3:
                 if (contadorPersonas==0)
                     printf("\n Nada que listar! No hay ningun dato cargado. \n");
-
-                listarPorNombre(arrayPersonas, QTYPERSONA);
-                printf("\n ");
-                ordenarPorNombre(arrayPersonas, QTYPERSONA);
-                printf("\n ");
-                listarPorNombre(arrayPersonas, QTYPERSONA);
+                else
+                {
+                    ordenarPorNombre(arrayPersonas, QTYPERSONA);
+                    listarPorNombre(arrayPersonas, QTYPERSONA);
+                }
                 break;
             case 4:
-                graficoEdades(arrayPersonas, QTYPERSONA);
+                if (contadorPersonas==0)
+                    printf("\n Nada que graficar! No hay ningun dato cargado. \n");
+                else
+                    graficoEdades(arrayPersonas, QTYPERSONA);
                 break;
             case 5:
                 seguir = 'n';

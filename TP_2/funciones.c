@@ -142,7 +142,11 @@ int eliminarPersona(EPersona arrayPersonas[], int sizeArray)
 
 
 
-
+/**
+ * @brief pide al usuario el dni de la persona y lo devuelve validado.
+ * @param no recibe parametros.
+ * @return el dni validado como long int.
+ */
 long int ingresoDNI()
 {
     long int dni;
@@ -152,16 +156,20 @@ long int ingresoDNI()
 }
 
 
+/**
+ * @brief pide al usuario los datos de nombre y edad de la persona y los carga (validados) en un array auxiliar recibido como parametro.
+ * @param arrayAuxiliar el array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void ingresoDatos(EPersona arrayAuxiliar[])
 {
     char arrayCharsAdmitidos[2]=" '";
 
     getType("\n Ingrese el nombre de la persona: ", "\n El dato ingresado es invalido!\
-        \n Solo se adminten letras, espacios y el caracter ['] \n",1,1,arrayCharsAdmitidos,50,arrayAuxiliar[0].nombre);
+        \n Solo se adminten letras, espacios y el caracter ['] \n",1,1,arrayCharsAdmitidos,49,arrayAuxiliar[0].nombre);
     getInt(&arrayAuxiliar[0].edad, "\n Ingrese la edad de la persona: ", "\n El dato ingresado es invalido!\
         \n La edad debe ser un numero positvo entre 0 y 150 \n",1,1,0,1,150);
     arrayAuxiliar[0].estado=1;
-
 }
 
 
@@ -178,18 +186,27 @@ void initArray(EPersona arrayPersonas[],int sizeArray)
         arrayPersonas[i].estado=-1;
 }
 
-
+/**
+ * @brief muetra por pantalla un listado con las personas ordenadas por nombre.
+ * @param arrayPersonas el array se pasa como parametro.
+ * @param sizeArray el tamaño del array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void listarPorNombre(EPersona arrayPersonas[], int sizeArray)
 {
     int i;
     for (i=0; i<sizeArray; i++)
         if (arrayPersonas[i].estado==1)
-            printf("\n DNI %ld - Nombre: %s - Edad: %d - (Estado: %d - Indice: %d) ", arrayPersonas[i].dni, arrayPersonas[i].nombre, arrayPersonas[i].edad, arrayPersonas[i].estado, i);
+            printf("\n DNI %ld - Nombre: %s - Edad: %d", arrayPersonas[i].dni, arrayPersonas[i].nombre, arrayPersonas[i].edad);
     printf("\n");
-
 }
 
-
+/**
+ * @brief ordena el array de personas por nombre.
+ * @param arrayPersonas el array se pasa como parametro.
+ * @param sizeArray el tamaño del array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void ordenarPorNombre(EPersona arrayPersonas[], int sizeArray)
 {
     int i;
@@ -212,6 +229,12 @@ void ordenarPorNombre(EPersona arrayPersonas[], int sizeArray)
 }
 
 
+/**
+ * @brief muetra un grafico por pantalla con la cantidad de personas por grupos de edades.
+ * @param arrayPersonas el array se pasa como parametro.
+ * @param sizeArray el tamaño del array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void graficoEdades(EPersona arrayPersonas[], int sizeArray)
 {
     int i; /// variable auxiliar
@@ -263,56 +286,6 @@ void graficoEdades(EPersona arrayPersonas[], int sizeArray)
     }
     printf("\n Grupo:\t <18\t19-35\t>35\n");
 }
-
-
-
-
-void cargaAutomatica(EPersona arrayPersonas[], int sizeArray)
-{
-    int i;
-    int dni = 1;
-///    char nombre[10]="nombre";
-    int edad = dni*10;
-
-    for (i=0; i<5; i++)
-    {
-
-        arrayPersonas[i].dni=dni;
-        arrayPersonas[i].edad=edad;
-        arrayPersonas[i].estado=1;
-
-        dni++;
-        edad = dni*10;
-    }
-
-    for ( ; i<10; i++)
-    {
-
-        arrayPersonas[i].dni=dni;
-        arrayPersonas[i].edad=edad;
-        arrayPersonas[i].estado=1;
-
-        dni++;
-        edad = dni-6;
-    }
-
-
-    strcpy(arrayPersonas[0].nombre,"BBB");
-    strcpy(arrayPersonas[1].nombre,"AAA");
-    strcpy(arrayPersonas[2].nombre,"CCC");
-    strcpy(arrayPersonas[3].nombre,"EEE");
-    strcpy(arrayPersonas[4].nombre,"DDD");
-    strcpy(arrayPersonas[5].nombre,"RRR");
-    strcpy(arrayPersonas[6].nombre,"PPP");
-    strcpy(arrayPersonas[7].nombre,"ACE");
-    strcpy(arrayPersonas[8].nombre,"Del");
-    strcpy(arrayPersonas[9].nombre,"HUN");
-
-    ///     printf("\n indice: %d",indice);
-}
-
-
-
 
 
 

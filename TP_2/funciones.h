@@ -58,9 +58,22 @@ int modificacionPersona(EPersona arrayPersonas[], int sizeArray);
  */
 int eliminarPersona(EPersona arrayPersonas[], int sizeArray);
 
+
+/**
+ * @brief pide al usuario el dni de la persona y lo devuelve validado.
+ * @param no recibe parametros.
+ * @return el dni validado como long int.
+ */
 long int ingresoDNI();
 
+
+/**
+ * @brief pide al usuario los datos de nombre y edad de la persona y los carga (validados) en un array auxiliar recibido como parametro.
+ * @param arrayAuxiliar el array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void ingresoDatos(EPersona arrayAuxiliar[]);
+
 
 /**
  * @brief Realiza la inicializacion del arrayPersonas ingresando el valor -1 en el campo estado.
@@ -71,10 +84,30 @@ void ingresoDatos(EPersona arrayAuxiliar[]);
 void initArray(EPersona arrayPersonas[],int sizeArray);
 
 
+/**
+ * @brief muetra por pantalla un listado con las personas ordenadas por nombre.
+ * @param arrayPersonas el array se pasa como parametro.
+ * @param sizeArray el tamaño del array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void listarPorNombre(EPersona arrayPersonas[], int sizeArray);
 
+
+/**
+ * @brief ordena el array de personas por nombre.
+ * @param arrayPersonas el array se pasa como parametro.
+ * @param sizeArray el tamaño del array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void ordenarPorNombre(EPersona arrayPersonas[], int sizeArray);
 
+
+/**
+ * @brief muetra un grafico por pantalla con la cantidad de personas por grupos de edades.
+ * @param arrayPersonas el array se pasa como parametro.
+ * @param sizeArray el tamaño del array se pasa como parametro.
+ * @return no devuelve nada.
+ */
 void graficoEdades(EPersona arrayPersonas[], int sizeArray);
 
 #endif // FUNCIONES_H_INCLUDED
