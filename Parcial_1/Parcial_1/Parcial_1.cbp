@@ -31,6 +31,26 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Informes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Informes.h" />
+		<Unit filename="Productos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Productos.h" />
+		<Unit filename="Publicaciones.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Publicaciones.h" />
+		<Unit filename="Usuarios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Usuarios.h" />
+		<Unit filename="funcionesAuxiliares.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funcionesAuxiliares.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
