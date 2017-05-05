@@ -282,38 +282,8 @@ void listarUsuarios(EUsuario* arrayUsuarios, int sizeArrayUsuarios)
     int i;
     for (i=0; i<sizeArrayUsuarios; i++)
         if (arrayUsuarios[i].flagRegistro!=EMPTY && arrayUsuarios[i].contadorCalificaciones!=0)
-            printf("\n Id %d - Nombre: %s - Promedio Calificaciones: %.2f - Cantidad Calificaciones: %d - CalifAcum: %d - FlagRegistro %d\
-                   ", arrayUsuarios[i].id, arrayUsuarios[i].nombre, arrayUsuarios[i].acumuladorCalificaciones/arrayUsuarios[i].contadorCalificaciones, arrayUsuarios[i].flagRegistro);
+            printf("\n Id %d - Nombre: %s - Promedio Calificaciones: %.2f \
+                   ", arrayUsuarios[i].id, arrayUsuarios[i].nombre, arrayUsuarios[i].acumuladorCalificaciones/arrayUsuarios[i].contadorCalificaciones);
     printf("\n");
 }
-
-/*
-void cargaAutomaticausuarios(EUsuario* arrayUsuarios, int sizeArrayUsuarios)
-{
-    arrayUsuarios[0].id=1;
-    arrayUsuarios[0].numero=10;
-    strcpy(arrayUsuarios[0].nombre,"AAA");
-    strcpy(arrayUsuarios[0].password,"AAA");
-    arrayUsuarios[0].contadorLlamadas=0;
-    arrayUsuarios[0].flagRegistro=USED;
-
-    arrayUsuarios[1].id=2;
-    arrayUsuarios[1].numero=20;
-    strcpy(arrayUsuarios[1].nombre,"CCC");
-    strcpy(arrayUsuarios[1].password,"CCC");
-    arrayUsuarios[1].contadorLlamadas=0;
-    arrayUsuarios[1].flagRegistro=USED;
-
-    arrayUsuarios[2].id=3;
-    arrayUsuarios[2].numero=30;
-    strcpy(arrayUsuarios[2].nombre,"BBB");
-    strcpy(arrayUsuarios[2].password,"BBB");
-    arrayUsuarios[2].contadorLlamadas=0;
-    arrayUsuarios[2].flagRegistro=USED;
-
-}
-
-
-*/
-
 

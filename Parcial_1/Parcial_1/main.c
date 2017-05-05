@@ -27,6 +27,10 @@
 #define QTYUSUARIO 100
 #define QTYPRODUCTO 1000
 
+#define TRUE 1
+#define FALSE 0
+
+
 /* int main()
 {
 printf("1- Alta del Usuario\n");
@@ -41,6 +45,8 @@ int main()
 
     char seguir='s';
     int opcion=0;
+    int existeUsuario;
+    int sigue=TRUE;
 
 
     if ( initArrayUsuarios(arrayUsuarios,QTYUSUARIO)==0 || initArrayProductos(arrayProductos,QTYPRODUCTO)==0 )
@@ -60,13 +66,13 @@ int main()
         printf("3- Baja del Usuario\n");
         printf("4- Publicar Producto\n");
         printf("5- Modificar Publicacion\n");
-        printf("6- Informar nombre y apellido del Usuario con mas reclamos\n");
-        printf("7- Informar reclamo mas realizado\n");
-        printf("8- Informar reclamo que en promedio mas demora en ser resuelto\n");
-        printf("\n");
-        printf("9- Salir\n");
-
-        printf("\nIngrese una opcion: ");
+        printf("6- Cancelar Publicarion\n");
+        printf("7- Comprar Producto\n");
+        printf("8- Listar publicaciones de usuario\n");
+        printf("9- Listar publicaciones\n");
+        printf("0- Listar usuarios\n");
+        printf("\n (cualquier otra opcion salir) \n");
+        printf("\n Ingrese una opcion: ");
         scanf("%d",&opcion);
 
         switch(opcion)
@@ -84,7 +90,7 @@ int main()
                 nuevaPublicacion(arrayProductos, QTYPRODUCTO,arrayUsuarios,QTYUSUARIO);
                 break;
             case 5:
-              ///  modificarLlamadaPorId(arrayProductos,QTYPRODUCTO);
+                modificarProductoPorIdUsuario(arrayProductos, QTYPRODUCTO, arrayUsuarios, QTYUSUARIO);
                 break;
             case 6:
                 /// listarUsuarioConMasMenosReclamos(arrayUsuarios,QTYUSUARIO,1);
@@ -93,16 +99,25 @@ int main()
               ///  listarMotivoLlamadaMasRealizado(arrayProductos,QTYPRODUCTO);
                 break;
             case 8:
-              ///  listarReclamoQueMasDemora(arrayProductos,QTYPRODUCTO);
+                while(sigue==TRUE)
+                {
+                    existeUsuario=ingresoIdUsuario();
+                    if ( buscarUsuarioPorId(arrayUsuarios, QTYUSUARIO, existeUsuario) != -1)
+                    {
+                        printf("\n El nro. de id del usuario NO se encuentra ingresado! Reingrese \n");
+                        sigue=FALSE;
+                    }
+                }
+                listarProductosUsuario(arrayProductos, QTYUSUARIO, existeUsuario);
                 break;
             case 9:
 
                 break;
             case 0:
-                seguir = 'n';
+                listarUsuarios(arrayUsuarios, QTYUSUARIO);
                 break;
             default:
-                printf("\n La opcion ingresada es invalida! Intente nuevamente. \n");
+                seguir = 'n';
                 break;
         }
     }
