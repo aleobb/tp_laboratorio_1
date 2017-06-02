@@ -1,0 +1,150 @@
+# depslib dependency file v1.0
+1496444664 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496444022 g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funciones.h
+
+1495658484 g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcionesauxiliares.h
+
+1496444256 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+
+1496438788 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496443544 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcarchivos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<fcntl.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496438880 g:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcarchivos.h
+
+1496423730 source:i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcarchivos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<fcntl.h>
+
+1495658486 source:i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+
+1495658484 i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcionesauxiliares.h
+
+1496426950 source:i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496426990 i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funciones.h
+
+1495995576 i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcarchivos.h
+
+1496426950 source:i:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496075524 source:e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcarchivos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1495658486 source:e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+
+1495658484 e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcionesauxiliares.h
+
+1496266006 source:e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496331796 e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funciones.h
+
+1495995576 e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\funcarchivos.h
+
+1496331646 source:e:\alebenws\_prog_lab_i - tps\tp_3\tp_3_resuelto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496443544 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\funcarchivos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<fcntl.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496444022 g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\funciones.h
+
+1496438880 g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\funcarchivos.h
+
+1495658484 g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\funcionesauxiliares.h
+
+1496445184 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
+1496444256 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\funcionesauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesAuxiliares.h"
+
+1496438788 source:g:\alebenws\_prog_lab_i - tps\tp_3\tp_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"funcArchivos.h"
+	"funcionesAuxiliares.h"
+
