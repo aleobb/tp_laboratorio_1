@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1498179140 source:d:\parcial_2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"funcAux.h"
+	"Destinatarios.h"
+
+1498179140 d:\parcial_2\arraylist.h
+
+1498179140 source:d:\parcial_2\destinatarios.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"funcAux.h"
+	"Destinatarios.h"
+
+1498167446 d:\parcial_2\funcaux.h
+
+1498175599 d:\parcial_2\destinatarios.h
+
+1498167446 source:d:\parcial_2\funcaux.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcAux.h"
+
+1498177736 source:d:\parcial_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"funcAux.h"
+	"Destinatarios.h"
+
